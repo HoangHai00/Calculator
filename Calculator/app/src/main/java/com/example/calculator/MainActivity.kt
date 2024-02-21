@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             }
             btnMainPercent.setOnClickListener { }
             imbtnMainDelete.setOnClickListener {
-                if (content != "0" && txtMainResult.text.toString().isEmpty()) {
+                if (content != "" && txtMainResult.text.toString().isEmpty()) {
                     content = content.substring(0, content.length - 1)
                     updateLayout()
                 }
